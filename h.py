@@ -1537,7 +1537,7 @@ def get_data(cookie):
     }
 
     fb_dtsg = next(item['value'] for item in form_inputs if item['name'] == 'fb_dtsg')
-        jazoest = next(item['value'] for item in form_inputs if item['name'] == 'jazoest')
+    jazoest = next(item['value'] for item in form_inputs if item['name'] == 'jazoest')
     return json.dumps({'fb_dtsg':fb_dtsg,'jazoet':jazoet})
 
 def login_tds(token):
